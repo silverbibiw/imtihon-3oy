@@ -51,11 +51,25 @@
     max-width: 536px;
 }
 
-.work_list{
-display: grid;
-align-items: center;
-grid-template-columns: auto auto auto;
-column-gap: 60px;
-row-gap: 40px;
+.work_list {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    column-gap: 60px;
+    row-gap: 40px;
 }
 
+@media screen and (max-width:946) {
+    .work {
+        background-repeat: no-repeat;
+        background-image: url('../../img/work-bg-top.svg');
+        background-position: center top;
+    }
+
+    .work_container {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+}
