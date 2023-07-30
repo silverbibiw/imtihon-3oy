@@ -1,0 +1,10 @@
+@mixin icon($icon) {
+    content: "";
+    width: 106px;
+    height: 106px;
+    flex-shrink: 0;
+    display: inline-block;
+    margin-bottom: 32px;
+    background-repeat: no-repeat;
+    background-image: url($icon);
+}

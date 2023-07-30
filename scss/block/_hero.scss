@@ -61,8 +61,12 @@
 }
 
 @media screen and (max-width:920px) {
+    .hero {
+        padding-top: 54px;
+        padding-bottom: 100px;
+    }
     .hero_container {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         margin-top: 30px;
     }
@@ -86,7 +90,8 @@
 
 @media screen and (max-width:573px) {
     .hero {
-        padding-top: 54px;
+        padding-top: 24px;
+        padding-bottom: 100px;
     }
 
     .hero_container {

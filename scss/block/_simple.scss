@@ -1,5 +1,5 @@
 .work {
-    padding-top: 150px;   
+    padding-top: 150px;
     background-repeat: no-repeat;
     background-image: url('../../img/simple-bg.svg');
     background-position: right center;
@@ -29,8 +29,63 @@
 }
 
 .simple_img {
-    width: 566px;
+    max-width: 563px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+
+@media screen and (max-width:939px) {
+    .simple {
+        padding-top: 35px;
+    }
+
+    .simple_container {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .simple_title {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .simple_text {
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    .simple_img {
+        max-width: 363px;
+
+    }
+
+}
+
+@media screen and (max-width:512px) {
+    .simple {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+
+    .simple_content {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .simple_title {
+        max-width: 327px;
+        font-size: 36px;
+        line-height: 36px;
+        padding-top: 15px;
+    }
+
+    .simple_img {
+        max-width: 320px;
+
+    }
+
 }

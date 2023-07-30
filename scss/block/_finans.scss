@@ -1,0 +1,55 @@
+.finans {
+    padding-top: 100px;
+}
+
+.finans_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.finans_item {
+    max-width: 350px;
+    padding-bottom: 32px;
+    text-align: center;
+
+    &::before {
+        @include icon('../img/icon.svg');
+    }
+
+    &:nth-child(2)::before {
+        @include icon('../img/icon1.svg');
+    }
+
+    &:nth-child(3)::before {
+        @include icon('../img/icon2.svg');
+    }
+}
+
+.finans_title {
+    max-width: 350px;
+    color: #36536B;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.finans_text {
+    max-width: 350px;
+    color: #6C8294;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    padding-top: 16px;
+}
+
+@media screen and (max-width:781px) {
+    .finans_list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .finans_item {
+        max-width: 320px;
+        margin-bottom: 32px;
+    }
+}
